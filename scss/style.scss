@@ -1,5 +1,5 @@
 @font-face {
-	font-family: "Brandon Text";
+	font-family: "Brandon Text Light";
 	src: url("../fonts/BrandonText-Light.eot");
 	src: local("Brandon Text Light"), local("BrandonText-Light"),
 		url("../fonts/BrandonText-Light.eot?#iefix") format("embedded-opentype"),
@@ -8,7 +8,7 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: "Brandon Text";
+	font-family: "Brandon Text Bold";
 	src: url("../fonts/BrandonText-Bold.eot");
 	src: local("Brandon Text Bold"), local("BrandonText-Bold"),
 		url("../fonts/BrandonText-Bold.eot?#iefix") format("embedded-opentype"),
@@ -17,7 +17,7 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: "Brandon Text";
+	font-family: "Brandon Text Medium";
 	src: url("../fonts/BrandonText-Medium.eot");
 	src: local("Brandon Text Medium"), local("BrandonText-Medium"),
 		url("../fonts/BrandonText-Medium.eot?#iefix") format("embedded-opentype"),
@@ -26,7 +26,7 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: "Brandon Text";
+	font-family: "Brandon Text Regular";
 	src: url("../fonts/BrandonText-Regular.eot");
 	src: local("Brandon Text Regular"), local("BrandonText-Regular"),
 		url("../fonts/BrandonText-Regular.eot?#iefix") format("embedded-opentype"),
@@ -46,9 +46,7 @@ header {
 	min-width: 1245px;
 	height: 100px;
 	background: #16181c;
-	font-family: "Brandon Text";
-	font-weight: 300;
-	font-style: normal;
+	font-family: "Brandon Text Light";
 	font-size: 16px;
 	.header-logo {
 		float: left;
@@ -102,9 +100,7 @@ header {
 
 .header-screen {
 	background-color: #0c111e;
-	font-family: "Brandon Text";
-	font-weight: bold;
-	font-style: normal;
+	font-family: "Brandon Text Bold";
 	font-size: 72px;
 	img {
 		position: relative;

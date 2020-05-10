@@ -1,0 +1,126 @@
+@font-face {
+	font-family: "Brandon Text";
+	src: url("../fonts/BrandonText-Light.eot");
+	src: local("Brandon Text Light"), local("BrandonText-Light"),
+		url("../fonts/BrandonText-Light.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/BrandonText-Light.woff") format("woff"), url("../fonts/BrandonText-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Brandon Text";
+	src: url("../fonts/BrandonText-Bold.eot");
+	src: local("Brandon Text Bold"), local("BrandonText-Bold"),
+		url("../fonts/BrandonText-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/BrandonText-Bold.woff") format("woff"), url("../fonts/BrandonText-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Brandon Text";
+	src: url("../fonts/BrandonText-Medium.eot");
+	src: local("Brandon Text Medium"), local("BrandonText-Medium"),
+		url("../fonts/BrandonText-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/BrandonText-Medium.woff") format("woff"), url("../fonts/BrandonText-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Brandon Text";
+	src: url("../fonts/BrandonText-Regular.eot");
+	src: local("Brandon Text Regular"), local("BrandonText-Regular"),
+		url("../fonts/BrandonText-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/BrandonText-Regular.woff") format("woff"),
+		url("../fonts/BrandonText-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 100%;
+	min-width: 1245px;
+	height: 100px;
+	background: #16181c;
+	font-family: "Brandon Text";
+	font-weight: 300;
+	font-style: normal;
+	font-size: 16px;
+	.header-logo {
+		float: left;
+		height: 100%;
+		img {
+			width: 181px;
+			height: 50px;
+			margin: 25px 0 25px 40px;
+		}
+	}
+	.header-menu {
+		float: right;
+		height: 100%;
+		ul {
+			display: inline-block;
+			list-style-type: none;
+			color: #ffffff;
+			min-width: 550px;
+			margin-top: 39px;
+			li {
+				float: left;
+				margin-left: 55px;
+				a {
+					color: #ffffff;
+					text-decoration: none;
+					&:hover {
+						border-bottom: 1px solid #4396f6;
+					}
+				}
+			}
+		}
+		.header-contacts {
+			float: right;
+			color: #fefeff;
+			background-color: #296dbb;
+			height: 40px;
+			width: 160px;
+			margin: 29px 40px 31px 55px;
+			border-radius: 18px;
+			p {
+				margin: 9px 0 0 0;
+				text-align: center;
+				a {
+					color: #fefeff;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.header-screen {
+	background-color: #0c111e;
+	font-family: "Brandon Text";
+	font-weight: bold;
+	font-style: normal;
+	font-size: 72px;
+	img {
+		position: relative;
+		width: 100%;
+		min-width: 1245px;
+	}
+	p {
+		position: absolute;
+		color: #ffffff;
+		margin-top: 17.7%;
+		top: 0;
+		left: 10.1%;
+		width: 34.6%;
+		min-width: 580px;
+		span {
+			color: #4396f6;
+		}
+	}
+}

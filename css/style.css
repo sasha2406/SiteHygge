@@ -36,41 +36,45 @@
 }
 
 header {
+  position: fixed;
   width: 100%;
-  min-width: 1245px;
-  height: 100px;
   background: #16181c;
   font-family: "Brandon Text Light";
   font-size: 16px;
+  min-height: 100px;
 }
 
 header .header-logo {
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
   height: 100%;
 }
 
 header .header-logo img {
+  vertical-align: middle;
   width: 181px;
   height: 50px;
   margin: 25px 0 25px 40px;
 }
 
 header .header-menu {
-  float: right;
-  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 62%;
 }
 
 header .header-menu ul {
   display: inline-block;
   list-style-type: none;
   color: #ffffff;
-  min-width: 550px;
-  margin-top: 39px;
+  width: 100%;
 }
 
 header .header-menu ul li {
-  float: left;
-  margin-left: 55px;
+  display: inline-block;
+  width: 16%;
+  min-width: 100px;
+  text-align: center;
 }
 
 header .header-menu ul li a {
@@ -82,22 +86,21 @@ header .header-menu ul li a:hover {
   border-bottom: 1px solid #4396f6;
 }
 
-header .header-menu .header-contacts {
-  float: right;
-  color: #fefeff;
+header .header-contacts {
+  display: inline-block;
+  vertical-align: middle;
   background-color: #296dbb;
   height: 40px;
   width: 160px;
-  margin: 29px 40px 31px 55px;
   border-radius: 18px;
 }
 
-header .header-menu .header-contacts p {
+header .header-contacts p {
   margin: 9px 0 0 0;
   text-align: center;
 }
 
-header .header-menu .header-contacts p a {
+header .header-contacts p a {
   color: #fefeff;
   text-decoration: none;
 }
@@ -109,13 +112,12 @@ header .header-menu .header-contacts p a {
 }
 
 .header-screen img {
-  position: relative;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   min-width: 1245px;
 }
 
 .header-screen p {
-  position: absolute;
   color: #ffffff;
   margin-top: 17.7%;
   top: 0;

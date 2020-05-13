@@ -36,15 +36,23 @@
 	font-style: normal;
 }
 
-@media (min-width: 576px) {}
-@media (min-width: 768px) {}
-@media (min-width: 992px) {}
-@media (min-width: 1200px) {}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
 
-@media (min-width: 1199px) {}
-@media (min-width: 991px) {}
-@media (min-width: 767px) {}
-@media (min-width: 575px) {}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+}
 
 * {
 	margin: 0;
@@ -53,39 +61,41 @@
 
 header {
 	position: fixed;
+	z-index: 2;
 	width: 100%;
-	// min-width: 1245px;
 	background: #16181c;
 	font-family: "Brandon Text Light";
 	font-size: 16px;
-	min-height: 100px;
+	height: 100px;
 	.header-logo {
 		display: inline-block;
 		vertical-align: middle;
 		height: 100%;
+		width: 12%;
 		img {
 			vertical-align: middle;
 			width: 181px;
 			height: 50px;
-			margin: 25px 0 25px 40px;
+			margin: 25px 0 25px;
+			margin-left: 20%;
 		}
 	}
 	.header-menu {
+		position: absolute;
+		right: 0;
+		top: 30px;
 		display: inline-block;
-		vertical-align: middle;
-		width: 62%;
 		ul {
 			display: inline-block;
 			list-style-type: none;
 			color: #ffffff;
 			width: 100%;
-			// min-width: 550px;
-			// margin-top: 39px;
+			min-width: 925px;
+			position: absolute;
+			right: 0;
 			li {
 				display: inline-block;
-				// margin-left: 2.8%;
-				width: 16%;
-				min-width: 100px;
+				width: 13%;
 				text-align: center;
 				a {
 					color: #ffffff;
@@ -95,48 +105,120 @@ header {
 					}
 				}
 			}
-		}
-	}
-		.header-contacts {
-			display: inline-block;
-			vertical-align: middle;
-			background-color: #296dbb;
-			height: 40px;
-			width: 160px;
-	// 		margin: 29px 40px 31px 55px;
-			border-radius: 18px;
-			p {
-				margin: 9px 0 0 0;
+			.header-contacts {
+				display: inline-block;
+				vertical-align: middle;
+				background-color: #235fa4;
+				height: 40px;
+				width: 160px;
+				border-radius: 18px;
 				text-align: center;
+				&:hover {
+					background-color: #296dbb;
+				}
 				a {
-					color: #fefeff;
-					text-decoration: none;
+					display: inline-block;
+					margin: 8.5px;
+					&:hover {
+						border-bottom: none;
+					}
 				}
 			}
 		}
 	}
-
+}
 
 .header-screen {
+	position: relative;
 	background-color: #0c111e;
 	font-family: "Brandon Text Bold";
 	font-size: 72px;
+	padding-top: 99px;
 	img {
-		// position: relative;
 		max-width: 100%;
-		height: auto;
-		min-width: 1245px;
+		height: 100%;
+		width: 100%;
 	}
-	p {
-		// position: absolute;
+	.header-screen-text {
+		position: absolute;
 		color: #ffffff;
-		margin-top: 17.7%;
+		margin-top: 15%;
 		top: 0;
 		left: 10.1%;
-		width: 34.6%;
+		width: 60%;
 		min-width: 580px;
 		span {
 			color: #4396f6;
 		}
+	}
+}
+
+.services {
+	min-height: 1190px;
+	background-color: #0c111e;
+	h3 {
+		font-family: "Brandon Text Bold";
+		font-size: 66px;
+		color: #ffffff;
+		text-align: center;
+		padding: 55px 0 20px;
+	}
+	.services-content {
+		font-family: "Brandon Text Regular";
+		font-size: 20px;
+		line-height: 30px;
+		color: #bfbfbf;
+		text-align: center;
+		margin-bottom: 30px;
+		padding: 0 10%;
+	}
+	.services-block {
+		text-align: center;
+		.row {
+			display: block;
+			.services-element {
+				position: relative;
+				display: inline-block;
+				box-sizing: border-box;
+				vertical-align: middle;
+				background-color: #111826;
+				margin: 2% 4%;
+				width: 280px;
+				height: 350px;
+				border-top: 2px solid #162d4c;
+				border-bottom: 2px solid #162d4c;
+				// padding: 40px;
+				img {
+					margin-top: 30%;
+					width: 50%;
+					height: auto;
+				}
+				p {
+					position: absolute;
+					bottom: 15%;
+					font-family: "Brandon Text Medium";
+					font-size: 24px;
+					color: #ffffff;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.technologies {
+	min-height: 880px;
+	background-color: #e9eaea;
+	h3 {
+		font-family: "Brandon Text Bold";
+		font-size: 66px;
+		text-align: center;
+		padding: 100px 0 41px;
+	}
+	.technologies-content {
+		font-family: "Brandon Text Medium";
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
 	}
 }

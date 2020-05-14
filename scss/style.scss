@@ -162,6 +162,12 @@ header {
 		color: #ffffff;
 		text-align: center;
 		padding: 55px 0 20px;
+		a {
+			text-decoration: none;
+			color: inherit;
+			padding-top: 100px;
+			margin-top: -100px;
+		}
 	}
 	.services-content {
 		font-family: "Brandon Text Regular";
@@ -212,13 +218,115 @@ header {
 	h3 {
 		font-family: "Brandon Text Bold";
 		font-size: 66px;
+		color: #0e1420;
 		text-align: center;
 		padding: 100px 0 41px;
+		a {
+			text-decoration: none;
+			color: inherit;
+			padding-top: 100px;
+			margin-top: -100px;
+		}
 	}
 	.technologies-content {
 		font-family: "Brandon Text Medium";
 		font-size: 20px;
 		line-height: 30px;
 		text-align: center;
+		margin-bottom: 40px;
+	}
+	.technologies-slide {
+		background-color: #ffffff;
+		width: 80%;
+		height: 490px;
+		margin: 0 10%;
+
+		.slide-title {
+			display: inline-block;
+			vertical-align: top;
+			box-sizing: border-box;
+			font-family: "Brandon Text Bold";
+			font-size: 24px;
+			width: 29%;
+			height: 100%;
+			padding: 3% 0 3% 2.4%;
+			.title-slide {
+				height: 35px;
+				color: #55585d;
+				margin: 10px 0;
+				span {
+					font-family: "Brandon Text Medium";
+					font-size: 16px;
+					margin: 3px 8px 0;
+					vertical-align: top;
+					display: inline-block;
+				//////////////
+					// border-right: 1px solid;
+					// padding-right: 8px;
+				}
+				a {
+					color: #55585d;
+					text-decoration: none;
+				}
+			}
+		}
+		.vertical-line {
+			display: inline-block;
+			vertical-align: top;
+			box-sizing: border-box;
+			width: 0.2%;
+			height: 90%;
+			border-right: 2px solid #000000;
+			margin-top: 2%;
+		}
+		.slide-content-main {
+			display: inline-block;
+			vertical-align: top;
+			box-sizing: border-box;
+			padding: 30px;
+			width: 69%;
+			height: 100%;
+			.slide-content {
+				font-family: "Brandon Text Regular";
+				font-size: 20px;
+				line-height: 30px;
+				color: #0e1420;
+				.slide-content-icons {
+					text-align: center;
+					.icons-wrap {
+						display: inline-block;
+						text-align: center;
+						margin: 2% 5%;
+						img {
+							width: 80px;
+							height: 80px;
+						}
+						p {
+							font-family: "Brandon Text Medium";
+							font-size: 24px;
+		
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.how-we-work {
+	min-height: 633px;
+	background-color: #235fa4;
+	h3{
+		font-family: "Brandon Text Bold";
+		font-size: 66px;
+		color: #ffffff;
+		text-align: center;
+		padding: 50px;
+		a {
+			text-decoration: none;
+			color: inherit;
+			padding-top: 100px;
+			margin-top: -100px;
+		}
 	}
 }

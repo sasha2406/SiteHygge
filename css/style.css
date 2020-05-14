@@ -156,6 +156,13 @@ header .header-menu ul .header-contacts a:hover {
   padding: 55px 0 20px;
 }
 
+.services h3 a {
+  text-decoration: none;
+  color: inherit;
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
 .services .services-content {
   font-family: "Brandon Text Regular";
   font-size: 20px;
@@ -210,8 +217,16 @@ header .header-menu ul .header-contacts a:hover {
 .technologies h3 {
   font-family: "Brandon Text Bold";
   font-size: 66px;
+  color: #0e1420;
   text-align: center;
   padding: 100px 0 41px;
+}
+
+.technologies h3 a {
+  text-decoration: none;
+  color: inherit;
+  padding-top: 100px;
+  margin-top: -100px;
 }
 
 .technologies .technologies-content {
@@ -219,4 +234,108 @@ header .header-menu ul .header-contacts a:hover {
   font-size: 20px;
   line-height: 30px;
   text-align: center;
+  margin-bottom: 40px;
+}
+
+.technologies .technologies-slide {
+  background-color: #ffffff;
+  width: 80%;
+  height: 490px;
+  margin: 0 10%;
+}
+
+.technologies .technologies-slide .slide-title {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  font-family: "Brandon Text Bold";
+  font-size: 24px;
+  width: 29%;
+  height: 100%;
+  padding: 3% 0 3% 2.4%;
+}
+
+.technologies .technologies-slide .slide-title .title-slide {
+  height: 35px;
+  color: #55585d;
+  margin: 10px 0;
+}
+
+.technologies .technologies-slide .slide-title .title-slide span {
+  font-family: "Brandon Text Medium";
+  font-size: 16px;
+  margin: 3px 8px 0;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.technologies .technologies-slide .slide-title .title-slide a {
+  color: #55585d;
+  text-decoration: none;
+}
+
+.technologies .technologies-slide .vertical-line {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 0.2%;
+  height: 90%;
+  border-right: 2px solid #000000;
+  margin-top: 2%;
+}
+
+.technologies .technologies-slide .slide-content-main {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 30px;
+  width: 69%;
+  height: 100%;
+}
+
+.technologies .technologies-slide .slide-content-main .slide-content {
+  font-family: "Brandon Text Regular";
+  font-size: 20px;
+  line-height: 30px;
+  color: #0e1420;
+}
+
+.technologies .technologies-slide .slide-content-main .slide-content .slide-content-icons {
+  text-align: center;
+}
+
+.technologies .technologies-slide .slide-content-main .slide-content .slide-content-icons .icons-wrap {
+  display: inline-block;
+  text-align: center;
+  margin: 2% 5%;
+}
+
+.technologies .technologies-slide .slide-content-main .slide-content .slide-content-icons .icons-wrap img {
+  width: 80px;
+  height: 80px;
+}
+
+.technologies .technologies-slide .slide-content-main .slide-content .slide-content-icons .icons-wrap p {
+  font-family: "Brandon Text Medium";
+  font-size: 24px;
+}
+
+.how-we-work {
+  min-height: 633px;
+  background-color: #235fa4;
+}
+
+.how-we-work h3 {
+  font-family: "Brandon Text Bold";
+  font-size: 66px;
+  color: #ffffff;
+  text-align: center;
+  padding: 50px;
+}
+
+.how-we-work h3 a {
+  text-decoration: none;
+  color: inherit;
+  padding-top: 100px;
+  margin-top: -100px;
 }

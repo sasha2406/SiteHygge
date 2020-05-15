@@ -239,9 +239,10 @@ header .header-menu ul .header-contacts a:hover {
 
 .technologies .technologies-slide {
   background-color: #ffffff;
-  width: 80%;
+  width: 90%;
   height: 490px;
-  margin: 0 10%;
+  margin: 0 5%;
+  position: relative;
 }
 
 .technologies .technologies-slide .slide-title {
@@ -269,53 +270,73 @@ header .header-menu ul .header-contacts a:hover {
   display: inline-block;
 }
 
-.technologies .technologies-slide .slide-title .title-slide a {
-  color: #55585d;
-  text-decoration: none;
-}
-
 .technologies .technologies-slide .vertical-line {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
-  width: 0.2%;
+  width: 2%;
   height: 90%;
   border-right: 2px solid #000000;
   margin-top: 2%;
 }
 
-.technologies .technologies-slide .slide-content-main {
-  display: inline-block;
-  vertical-align: top;
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + .radio-class {
+  font-size: 40px;
+}
+
+input[type="radio"]:checked + .radio-class .title-slide {
+  margin: 0 -10px 20px;
+  width: 391px;
+}
+
+input[type="radio"]:checked + .radio-class .title-slide span {
+  border-right: 1px solid;
+  padding-right: 8px;
+  margin: 14px 8px 0;
+}
+
+input[type="radio"]:checked + .radio-class + .tab-content {
+  display: block;
+}
+
+.tab-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
   box-sizing: border-box;
   padding: 30px;
   width: 69%;
   height: 100%;
 }
 
-.technologies .technologies-slide .slide-content-main .slide-content {
+.tab-content .slide-content {
   font-family: "Brandon Text Regular";
   font-size: 20px;
   line-height: 30px;
   color: #0e1420;
 }
 
-.technologies .technologies-slide .slide-content-main .slide-content .slide-content-icons {
+.tab-content .slide-content .slide-content-icons {
   text-align: center;
 }
 
-.technologies .technologies-slide .slide-content-main .slide-content .slide-content-icons .icons-wrap {
+.tab-content .slide-content .slide-content-icons .icons-wrap {
   display: inline-block;
   text-align: center;
   margin: 2% 5%;
 }
 
-.technologies .technologies-slide .slide-content-main .slide-content .slide-content-icons .icons-wrap img {
+.tab-content .slide-content .slide-content-icons .icons-wrap img {
   width: 80px;
   height: 80px;
 }
 
-.technologies .technologies-slide .slide-content-main .slide-content .slide-content-icons .icons-wrap p {
+.tab-content .slide-content .slide-content-icons .icons-wrap p {
   font-family: "Brandon Text Medium";
   font-size: 24px;
 }

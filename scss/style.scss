@@ -237,10 +237,10 @@ header {
 	}
 	.technologies-slide {
 		background-color: #ffffff;
-		width: 80%;
+		width: 90%;
 		height: 490px;
-		margin: 0 10%;
-
+		margin: 0 5%;
+		position: relative;
 		.slide-title {
 			display: inline-block;
 			vertical-align: top;
@@ -260,13 +260,9 @@ header {
 					margin: 3px 8px 0;
 					vertical-align: top;
 					display: inline-block;
-				//////////////
+					//////////////
 					// border-right: 1px solid;
 					// padding-right: 8px;
-				}
-				a {
-					color: #55585d;
-					text-decoration: none;
 				}
 			}
 		}
@@ -274,39 +270,63 @@ header {
 			display: inline-block;
 			vertical-align: top;
 			box-sizing: border-box;
-			width: 0.2%;
+			width: 2%;
 			height: 90%;
 			border-right: 2px solid #000000;
 			margin-top: 2%;
 		}
-		.slide-content-main {
-			display: inline-block;
-			vertical-align: top;
-			box-sizing: border-box;
-			padding: 30px;
-			width: 69%;
-			height: 100%;
-			.slide-content {
-				font-family: "Brandon Text Regular";
-				font-size: 20px;
-				line-height: 30px;
-				color: #0e1420;
-				.slide-content-icons {
-					text-align: center;
-					.icons-wrap {
-						display: inline-block;
-						text-align: center;
-						margin: 2% 5%;
-						img {
-							width: 80px;
-							height: 80px;
-						}
-						p {
-							font-family: "Brandon Text Medium";
-							font-size: 24px;
-		
-						}
-					}
+	}
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"]:checked + .radio-class {
+	font-size: 40px;
+	.title-slide {
+		// background-color: yellow;
+		margin: 0 -10px 20px;
+		width: 391px;
+		span {
+			border-right: 1px solid;
+			padding-right: 8px;
+			margin: 14px 8px 0;
+		}
+	}
+}
+
+input[type="radio"]:checked + .radio-class + .tab-content {
+	display: block;
+}
+
+.tab-content {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	box-sizing: border-box;
+	padding: 30px;
+	width: 69%;
+	height: 100%;
+	.slide-content {
+		font-family: "Brandon Text Regular";
+		font-size: 20px;
+		line-height: 30px;
+		color: #0e1420;
+		.slide-content-icons {
+			text-align: center;
+			.icons-wrap {
+				display: inline-block;
+				text-align: center;
+				margin: 2% 5%;
+				img {
+					width: 80px;
+					height: 80px;
+				}
+				p {
+					font-family: "Brandon Text Medium";
+					font-size: 24px;
 				}
 			}
 		}
@@ -316,7 +336,7 @@ header {
 .how-we-work {
 	min-height: 633px;
 	background-color: #235fa4;
-	h3{
+	h3 {
 		font-family: "Brandon Text Bold";
 		font-size: 66px;
 		color: #ffffff;

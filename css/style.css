@@ -61,6 +61,7 @@ header .header-logo img {
 }
 
 header .header-menu {
+  width: 80%;
   position: absolute;
   right: 0;
   top: 30px;
@@ -79,7 +80,7 @@ header .header-menu ul {
 
 header .header-menu ul li {
   display: inline-block;
-  width: 13%;
+  width: 13.2%;
   text-align: center;
 }
 
@@ -92,7 +93,7 @@ header .header-menu ul li a:hover {
   border-bottom: 1px solid #4396f6;
 }
 
-header .header-menu ul .header-contacts {
+header .header-menu ul .button-contacts {
   display: inline-block;
   vertical-align: middle;
   background-color: #235fa4;
@@ -102,16 +103,16 @@ header .header-menu ul .header-contacts {
   text-align: center;
 }
 
-header .header-menu ul .header-contacts:hover {
+header .header-menu ul .button-contacts:hover {
   background-color: #296dbb;
 }
 
-header .header-menu ul .header-contacts a {
+header .header-menu ul .button-contacts a {
   display: inline-block;
   margin: 8.5px;
 }
 
-header .header-menu ul .header-contacts a:hover {
+header .header-menu ul .button-contacts a:hover {
   border-bottom: none;
 }
 
@@ -344,17 +345,172 @@ input[type="radio"]:checked + .radio-class + .tab-content {
 .how-we-work {
   min-height: 633px;
   background-color: #235fa4;
+  color: #ffffff;
+  text-align: center;
 }
 
 .how-we-work h3 {
   font-family: "Brandon Text Bold";
   font-size: 66px;
-  color: #ffffff;
   text-align: center;
-  padding: 50px;
+  padding: 100px 0 41px;
 }
 
 .how-we-work h3 a {
+  text-decoration: none;
+  color: inherit;
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+.how-we-work .work-element {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 25%;
+  margin: 3% 4%;
+  text-align: center;
+  vertical-align: top;
+}
+
+.how-we-work .work-element .work-image {
+  display: inline-block;
+  width: 125px;
+  height: 125px;
+}
+
+.how-we-work .work-element p {
+  font-family: "Brandon Text Medium";
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+.how-we-work .work-element .work-element-text {
+  font-family: "Brandon Text Light";
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+
+.apps {
+  position: relative;
+  z-index: 1;
+  min-height: 543px;
+  font-family: "Brandon Text Bold";
+  color: #ffffff;
+  background-color: #0c111e;
+  text-align: center;
+}
+
+.apps h3 {
+  font-size: 66px;
+  text-align: center;
+  padding: 100px 0 41px;
+}
+
+.apps h3 a {
+  text-decoration: none;
+  color: inherit;
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+.apps .apps-content {
+  display: inline-block;
+  width: 60%;
+  font-family: "Brandon Text Medium";
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.apps .apps-icons {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.apps .apps-icons .app-icon {
+  display: inline-block;
+  width: 75px;
+  height: 85px;
+  text-align: center;
+  margin: 3% 6%;
+}
+
+.apps .apps-icons .app-icon p {
+  margin-top: 10px;
+}
+
+.apps-contact {
+  background-color: #e9eaea;
+  min-height: 353px;
+  text-align: center;
+  z-index: 0;
+  position: relative;
+}
+
+.apps-contact img {
+  position: absolute;
+  right: 57px;
+  width: 500px;
+  top: -20px;
+  z-index: -1;
+}
+
+.apps-contact .apps-content {
+  width: 80%;
+  margin: auto 10%;
+  color: #0c111e;
+  padding-top: 95px;
+  font-family: "Brandon Text Medium";
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.apps-contact .button-contacts {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #235fa4;
+  color: #ffffff;
+  height: 40px;
+  width: 160px;
+  border-radius: 18px;
+  text-align: center;
+  font-family: "Brandon Text Light";
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.apps-contact .button-contacts:hover {
+  background-color: #296dbb;
+}
+
+.apps-contact .button-contacts a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  margin: 8.5px;
+}
+
+.apps-contact .button-contacts a:hover {
+  border-bottom: none;
+}
+
+.works {
+  position: relative;
+  z-index: 1;
+  background-color: #235fa4;
+  min-height: 843px;
+  color: #ffffff;
+  font-family: "Brandon Text Bold";
+  text-align: center;
+}
+
+.works h3 {
+  font-size: 66px;
+  text-align: center;
+  padding: 100px 0 41px;
+}
+
+.works h3 a {
   text-decoration: none;
   color: inherit;
   padding-top: 100px;
